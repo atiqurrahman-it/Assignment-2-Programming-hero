@@ -132,7 +132,80 @@ Quick feature style-sheets
   opacity: 0.65;
 }
 
-/* media query */
+/* --------------------------------
+Quick feature style-sheets
+---------------------------------- */
+.feature {
+  margin-top: 135px;
+  width: 1072px;
+}
+
+.feature-info {
+  display: grid;
+  grid-column-gap: 54px;
+  grid-template-columns: 1fr 1.3fr;
+}
+.feature-info-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.feature-info-description,
+.inner-info-feature-description {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 16px;
+  color: #727272;
+  opacity: 0.65;
+}
+
+article {
+  margin-left: 30px;
+}
+.inner-info-feature-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.feature-thumbnail {
+  background: url("../images/architect.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  height: 700px;
+}
+
+.feature-button {
+  position: relative;
+  left: 0;
+  bottom: -85%;
+  color: aliceblue;
+  font-size: 42px;
+  width: 250px;
+  height: 90px;
+  padding: 40px 40px;
+  background: #ff900e;
+  border-radius: 8px;
+  text-align: center;
+}
+.feature-button-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 65px;
+}
+.feature-button-exprience {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* --------------------------------
+       media query 
+---------------------------------- */
 
 @media only screen and (max-width: 576px) {
   /* -------header  start   */
@@ -154,7 +227,8 @@ Quick feature style-sheets
     font-size: 100%;
   }
 
-  /* -------quick feature  start   */
+  /* -------quick feature  start ----  */
+
   .quick-feature-container {
     width: 100%;
   }
@@ -163,5 +237,13 @@ Quick feature style-sheets
   }
   .quick-features-teams {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ------- feature ----  */
+  .feature {
+    width: 100%;
+  }
+  .feature-info {
+    grid-template-columns: 1fr;
   }
 }
