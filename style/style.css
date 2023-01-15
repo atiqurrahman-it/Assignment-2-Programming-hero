@@ -154,6 +154,8 @@ Quick feature style-sheets
   grid-template-columns: 1fr 1.3fr;
 }
 .feature-info-title {
+  padding-left: 15px;
+  border-left: 5px solid #ff900e;
   font-weight: 700;
   font-size: 45px;
   color: #131313;
@@ -235,13 +237,25 @@ article {
 
 .award:hover {
   transform: rotate(20deg);
-
-  /* transform: rotate(0.5turn); */
+  box-shadow: 5px 4px #b3b3b3, 21em 0 31.4em #ebebe9;
 }
+
 /* --------------------------------
        our-sponsors  
 ---------------------------------- */
-
+.sponsors-info {
+  max-width: 420px;
+  margin: auto;
+  margin-top: 170px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our-sponsors-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  padding-bottom: 24px;
+}
 .sponsors {
   display: flex;
   justify-content: space-between;
@@ -304,11 +318,38 @@ article {
   }
   .quick-features-teams {
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .quick-feature-info {
+    margin-left: 9px;
+  }
+
+  .inner-info,
+  .fact-info {
+    padding-left: 10px;
   }
 
   /* ------- feature ----  */
 
   .feature-info {
     grid-template-columns: 1fr;
+  }
+  /* ------- feature ----  */
+  .fact-info {
+    width: 100%;
+  }
+  .awards,
+  .sponsors {
+    margin-left: 0px;
+    gap: 50px;
+    align-items: center;
+  }
+  /* feature-button  */
+  .feature-button {
+    bottom: -85%;
+    font-size: 22px;
+    width: 250px;
+    height: 100px;
+    padding: 30px 30px;
   }
 }
