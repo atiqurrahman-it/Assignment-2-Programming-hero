@@ -24,6 +24,7 @@ footer {
   font-size: 16px;
   color: #727272;
   opacity: 0.65;
+  margin-bottom: 25px;
 }
 
 .primary-btn {
@@ -81,6 +82,7 @@ nav {
   font-weight: 700;
   font-size: 60px;
   color: #131313;
+  margin-bottom: 35px;
 }
 
 .banner-thumbnail {
@@ -109,7 +111,7 @@ Quick feature style-sheets
   gap: 24px;
 }
 .quick-features-team img {
-  width: 280px;
+  max-width: 280px;
   border-radius: 8px;
 }
 
@@ -117,16 +119,19 @@ Quick feature style-sheets
   margin-left: 70px;
 }
 .quick-feature-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 45px;
   color: #131313;
 }
-.title-part1 {
+.quick-feature-title span:nth-child(1) {
   color: #727272;
+  font-weight: 500;
 }
-.title-part2 {
+.quick-feature-title span:nth-child(2) {
   color: #ff900e;
+  font-weight: 700;
 }
+
 .quick-feature-description {
   margin-top: 24px;
   margin-bottom: 32px;
@@ -137,11 +142,10 @@ Quick feature style-sheets
 }
 
 /* --------------------------------
-Quick feature style-sheets
+      feature style-sheets
 ---------------------------------- */
 .feature {
   margin-top: 135px;
-  width: 1072px;
 }
 
 .feature-info {
@@ -183,7 +187,7 @@ article {
   color: aliceblue;
   font-size: 42px;
   width: 250px;
-  height: 90px;
+  height: 120px;
   padding: 40px 40px;
   background: #ff900e;
   border-radius: 8px;
@@ -194,7 +198,7 @@ article {
   font-weight: 700;
   font-size: 65px;
 }
-.feature-button-exprience {
+.feature-button-experience {
   font-weight: 500;
   font-size: 25px;
 }
@@ -205,16 +209,20 @@ article {
 .fact {
   margin-top: 123px;
 }
-.fact-info.primary-title {
+.fact-info {
+  width: 40%;
+}
+.fact-info-title {
   font-weight: 700;
   font-size: 45px;
   color: #131313;
   margin-bottom: 24px;
 }
 .awards {
-  margin-top: 100px;
+  margin-left: 20px;
+  margin-top: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .award {
   width: 130px;
@@ -222,7 +230,13 @@ article {
   border: 1px solid #ff900e;
   border-radius: 8px;
   text-align: center;
-  padding: 45px 35px;
+  padding: 35px 25px;
+}
+
+.award:hover {
+  transform: rotate(20deg);
+
+  /* transform: rotate(0.5turn); */
 }
 /* --------------------------------
        our-sponsors  
