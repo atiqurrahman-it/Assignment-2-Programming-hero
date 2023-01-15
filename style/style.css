@@ -370,7 +370,7 @@ article {
        media query 
 ---------------------------------- */
 
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   /* -------header  start   */
   .container {
     width: 100%;
@@ -455,5 +455,46 @@ article {
   }
   .team-description {
     display: none;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+
+  nav,
+  .nav-list,
+  .quick-features {
+    flex-direction: column;
+  }
+  .feature-info {
+    grid-template-columns: 1fr;
+  }
+  .awards,
+  .teams {
+    flex-wrap: wrap;
+    order: 2;
+    gap: 50px;
+  }
+
+  .sponsors {
+    margin: 0;
+    flex-wrap: wrap;
+    order: 2;
+  }
+  .teams {
+    text-align: center;
+  }
+  .social-media {
+    padding-left: 30px;
+  }
+  .team-description {
+    display: none;
+  }
+  .team img {
+    max-width: 50%;
+    height: 50%;
   }
 }
